@@ -32,11 +32,12 @@ pandoc-latex-environment:
   warning-box: [warning]
   error-box: [error]
 ---
-
-
  
 # Introducción
 
+¿Por qué me he animado a escribir estas notas sobre programación en Python para niños? Todo viene del verano de 2023, estuvimos leyendo la Isla del Tesoro y cuando acabó el verano empezaron una extraescolar de programación y robótica en la que utilizan lenguajes como [Scratch](https://scratch.mit.edu/) o [Make Code](https://arcade.makecode.com/). En ese momento pensé en crear materiales para seguir programando en casa usando Python y se me ocurrió unir la programación y los piratas para hacerlo más ameno a los niños siguiendo las aventuras de _Jim Hawkins_ que teníamos recientes.
+
+La verdad es que les gustó, no sé cuanta programación aprendieron pero les gustó. Y por eso comparto los materiales, para que cualquier pueda usarlos y adaptarlos a sus necesidades.
 
 ## Breve Introducción a la Programación
 
@@ -50,7 +51,7 @@ La programación es como enseñarle a una computadora cómo hacer tareas especí
 
 Cada capítulo te llevará un paso más cerca de convertirte en un hábil programador y aventurero. Seguiremos la historia de "La Isla del Tesoro" mientras aprendemos sobre variables, cadenas de texto, listas, funciones y más. No te preocupes si todo esto suena complicado en este momento; lo iremos desglosando en pequeños trozos de conocimiento que podrás asimilar fácilmente.
 
-En cada capítulo de este libro, exploraremos el vasto océano de la programación en Python mientras seguimos la narrativa de Jim Hawkins y sus compañeros de tripulación. Como un buen capitán en una expedición, hay que asegurarse de que todos los miembros de la tripulación comprendan cada punto importante de la travesía. Es por eso que hemos designado un "Fondeadero" al final de cada sección. Aquí, en nuestro refugio seguro, resumiremos los conceptos clave que hemos explorado y reflexionaremos sobre cómo aplicarlos en nuestro viaje.
+En cada capítulo de este libro, exploraremos el vasto océano de la programación en Python mientras seguimos la narrativa de _Jim Hawkins_ y sus compañeros de tripulación. Como un buen capitán en una expedición, hay que asegurarse de que todos los miembros de la tripulación comprendan cada punto importante de la travesía. Es por eso que hemos designado un "Fondeadero" al final de cada sección. Aquí, en nuestro refugio seguro, resumiremos los conceptos clave que hemos explorado y reflexionaremos sobre cómo aplicarlos en nuestro viaje.
 
 Así que, prepárate para zarpar hacia la isla del conocimiento y la aventura. ¡Es hora de explorar el emocionante mundo de la programación en Python inspirado en piratas! ¿Listo para izar las velas y comenzar esta travesía? ¡Vamos a ello!
 
@@ -106,7 +107,9 @@ El código anterior te pedirá como usuario que ingreses tu nombre, y luego lo a
 
 ## Fondeadero
 
-En resumen, Python es un lenguaje de programación versátil y fácil de aprender (al menos las instrucciones básicas). Las variables son como cofres para almacenar datos, la asignación de valores llena esos cofres y las funciones como `print()` y `input()` te permiten hacer cosas interesantes con tu programa. Ahora que hemos echado un vistazo rápido, estamos listos para emprender nuestra aventura en la programación en Python inspirada en "La Isla del Tesoro". ¡Continuemos con la búsqueda del tesoro digital!
+El apartado _fondeadero_ va a estar presente en todos los capítulos. Esta palabra la he rescatado del juego _La Ruta del Tesoro_, un juego tipo monopoly pero ambientado con piratas en el que si caías en la  casilla _fondeadero_ te podías llevar los reales que hubiera en la mesa. Y es que ese era el sentido del _fondeadero_, un lugar tranquilo donde los barcos podían echar el ancla y llevar a cabo arreglos en el barco y descansar. Y es lo que se hará en estos apartados, descansar y revisar lo aprendido.
+
+Y lo que hemos aprendido en esta introducción es que Python es un lenguaje de programación versátil y fácil de aprender (al menos las instrucciones básicas). Las variables son como cofres para almacenar datos, la asignación de valores llena esos cofres y las funciones como `print()` y `input()` te permiten hacer cosas interesantes con tu programa. Ahora que hemos echado un vistazo rápido, estamos listos para emprender nuestra aventura en la programación en Python inspirada en "La Isla del Tesoro". ¡Continuemos con la búsqueda del tesoro digital!
 
 ## Explicación de cómo ejecutar código Python en la consola de Linux
 
