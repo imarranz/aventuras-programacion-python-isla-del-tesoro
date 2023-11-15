@@ -80,6 +80,13 @@ Antes de escribir el código, necesitamos diseñar cómo se desarrollará la bú
 
 En cada ubicación, el jugador tendrá la oportunidad de buscar tesoros. Si encuentra un tesoro, se le mostrará un mensaje de éxito. Si no encuentra un tesoro, continuará explorando las ubicaciones restantes.
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./figures/ubicaciones-tesoro.png} % Reemplaza "nombre_de_tu_archivo" con el nombre de tu imagen y su extensión
+    \caption*{Ubicaciones en las que podría estar el tesoro ¿eres lo bastante valiente para ir a buscarlo?. Imagen generada con DALL-E.}
+    \label{fig:ubicaciones-tesoro}
+\end{figure}
+
 #### Desarrollo del Programa en Python
 
 Aquí está el código en Python que simula esta búsqueda del tesoro:

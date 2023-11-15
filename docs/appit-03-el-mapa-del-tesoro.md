@@ -35,9 +35,9 @@ Ahora, ¿cómo se relaciona esto con un mapa del tesoro? Imagina que cada elemen
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{./figures/mapa_plano_tesoro.png} % Reemplaza "nombre_de_tu_archivo" con el nombre de tu imagen y su extensión
+    \includegraphics[width=0.8\textwidth]{./figures/mapa-plano-tesoro.png} % Reemplaza "nombre_de_tu_archivo" con el nombre de tu imagen y su extensión
     \caption*{Este antiguo mapa del tesoro revela secretos enterrados en islas remotas y playas ocultas. Sigue las pistas, descifra los enigmas y aventúrate en la búsqueda de riquezas perdidas. Imagen generada con DALL-E.}
-    \label{fig:mapa_plano_tesoro}
+    \label{fig:mapa-plano-tesoro}
 \end{figure}
 
 ```
