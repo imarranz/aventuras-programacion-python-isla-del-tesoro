@@ -28,7 +28,9 @@ Este proyecto es el resultado de una experiencia personal. Surgió en el verano 
 
 Las ilustraciones y las imágenes han sido generadas con DALL-E.
 
-Cualquier persona es libre de utilizar este material, aunque se recomienda adaptarlo según sus necesidades. No es necesario seguir o participar en este proyecto, pero si tienes sugerencias, no dudes en escribirme o enviar un Pull Request (PR).
+Cualquier persona es libre de utilizar este material, aunque se recomienda adaptarlo según sus necesidades. No es necesario seguir o participar en este proyecto, pero si tienes sugerencias, no dudes en escribirme o enviar un Pull Request (PR <a href="https://github.com/imarranz/aventuras-programacion-python-isla-del-tesoro/pulls">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?longCache=true" alt="Pull Requests">
+  </a>).
 
 ¡Espero que disfrutes de las Aventuras de Programación en Python en la Isla del Tesoro!
 
