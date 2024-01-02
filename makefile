@@ -19,19 +19,19 @@ all: book-pdf
 
 book-pdf:
 	pandoc \
-		docs/appit-00-introducción.md \
-		docs/appit-01-el-viaje-comienza.md \
-		docs/appit-02-la-carta-del-capitán.md \
-		docs/appit-03-el-mapa-del-tesoro.md \
-		docs/appit-04-abordando-el-barco-pirata.md \
-		docs/appit-05-búsqueda-del-tesoro.md \
-		docs/appit-06-enfrentamiento-con-piratas.md \
-		docs/appit-07-el-tesoro-encontrado.md \
-		docs/appit-08-zarpa-de-la-isla.md \
-		docs/appit-09-regreso-a-casa.md \
-		docs/appit-10-más-aventuras-piratas.md \
-		docs/appit-11-apéndice.md \
-		docs/appit-12-conclusión.md \
+		books/appit-00-introducción.md \
+		books/appit-01-el-viaje-comienza.md \
+		books/appit-02-la-carta-del-capitán.md \
+		books/appit-03-el-mapa-del-tesoro.md \
+		books/appit-04-abordando-el-barco-pirata.md \
+		books/appit-05-búsqueda-del-tesoro.md \
+		books/appit-06-enfrentamiento-con-piratas.md \
+		books/appit-07-el-tesoro-encontrado.md \
+		books/appit-08-zarpa-de-la-isla.md \
+		books/appit-09-regreso-a-casa.md \
+		books/appit-10-más-aventuras-piratas.md \
+		books/appit-11-apéndice.md \
+		books/appit-12-conclusión.md \
 		--output $(OUTPUT)".pdf" \
 		--from markdown \
 		--template $(TEMPLATE) \
