@@ -34,14 +34,48 @@ Cualquier persona es libre de utilizar este material, aunque se recomienda adapt
 
 ## Capítulos
 
-  * Introducción
-  * El Viaje Comienza
-  * La Carta del Capitán
-  * El Mapa del Tesoro
-  * Abordando el Barco Pirata
-  * Búsqueda del Tesoro
-  * Enfrentamiento con Piratas
-  * El Tesoro Encontrado
-  * Zarpa de la Isla
-  * Regreso a Casa
-  * Más Aventuras Piratas
+Cada capítulo de este libro introduce un nuevo concepto de programación en Python, entrelazando de manera creativa los conceptos y juegos de programación con la emocionante trama de "La Isla del Tesoro" de _Robert Louis Stevenson_. A medida que avanzamos en nuestra aventura, descubriremos tesoros ocultos en el mundo de la programación, cada uno alineado con los eventos clave de la historia. Así, no solo aprenderemos a programar, sino que también viviremos las peripecias de _Jim Hawkins_ y su tripulación en búsqueda del legendario tesoro del _Capitán Flint_.
+
+### Capítulo 1: El Viaje Comienza
+
+  - **Introducción a Python:** Se presenta la programación como una aventura emocionante, comparable a la travesía en "La Isla del Tesoro".
+
+  - **Primeros Pasos en Python:** Aprenden a escribir y ejecutar su primer programa, utilizando `print()` para saludar a los personajes del libro.
+
+### Capítulo 2: La Carta del Capitán
+
+  - **Trabajo con Cadenas de Texto:** Se exploran las cadenas de texto en Python, incluyendo cómo crearlas, concatenarlas y manipularlas para descifrar mensajes como una carta de pirata.
+
+### Capítulo 3: El Mapa del Tesoro
+
+  - **Introducción a las Listas:** Las listas se introducen como una herramienta para organizar datos, comparándolas con mapas del tesoro que guían a los piratas a sus recompensas.
+
+### Capítulo 4: Abordando el Barco Pirata
+
+  - **Estructuras de Control (Condicionales):** Se enseña cómo usar sentencias `if`, `elif` y `else` para tomar decisiones en el código, similar a cómo un capitán decide qué hacer durante un abordaje.
+
+### Capítulo 5: Búsqueda del Tesoro
+
+  - **Uso de Bucles (Loops):** Los bucles se introducen para repetir acciones, como buscar tesoros en múltiples ubicaciones en una isla.
+
+### Capítulo 6: Enfrentamiento con Piratas
+
+  - **Funciones en Python:** Se discute cómo las funciones permiten reutilizar código y simplificar programas, todo ello a través del desarrollo de un juego de batalla pirata.
+
+### Capítulo 7: El Tesoro Encontrado
+
+  - **Importancia de las Funciones para Organizar el Código:** Se refuerza el uso de funciones para dividir tareas complejas en partes más simples, facilitando la gestión de grandes bloques de código en la búsqueda final del tesoro.
+
+### Capítulo 8: Zarpa de la Isla
+
+  - **Gestión de Archivos en Python:** Aprenden a leer y escribir archivos para guardar y cargar datos de su aventura, esencial para registrar los tesoros encontrados.
+
+### Capítulo 9: Regreso a Casa
+
+  - **Repaso y Reflexión:** Se revisan los conceptos aprendidos durante la aventura y se reflexiona sobre cómo aplicarlos en nuevos contextos de programación.
+
+### Capítulo 10: Más Aventuras Piratas
+
+  - **Módulos y Bibliotecas Externas:** Introduce cómo usar módulos y bibliotecas externas en Python para expandir las capacidades del lenguaje y desarrollar proyectos más complejos y creativos.
+
+Cada capítulo utiliza la narrativa de "La Isla del Tesoro" para hacer que los conceptos de programación sean más accesibles y atractivos para los niños, ayudándoles a ver la programación como una emocionante aventura llena de descubrimientos y desafíos.
