@@ -10,7 +10,9 @@
   <a href="LICENSE.md">
     <img src="https://img.shields.io/badge/License-MIT-red.svg?longCache=true" alt="MIT License">
   </a>
-   <a href="https://github.com/imarranz/aventuras-programacion-python-isla-del-tesoro"><img src="https://img.shields.io/github/stars/imarranz/aventuras-programacion-python-isla-del-tesoro" alt="Stars"/></a>
+   <a href="https://github.com/imarranz/aventuras-programacion-python-isla-del-tesoro"><img src="https://img.shields.io/github/stars/imarranz/aventuras-programacion-python-isla-del-tesoro" alt="Stars"/>
+  </a>
+   <a href="https://imarranz.github.io/aventuras-programacion-python-isla-del-tesoro/"><img src="https://img.shields.io/website?url=https%3A%2F%2Fimarranz.github.io%2Faventuras-programacion-python-isla-del-tesoro%2F&up_message=Aventuras%20de%20Programaci%C3%B3n%20en%20la%20Isla%20del%20Tesoro" alt="Web"/>
   </a>
 </p>
 
