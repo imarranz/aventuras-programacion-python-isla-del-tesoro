@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ibon Martínez-Arranz">
+  <link rel="canonical" href="https://github.com/imarranz/aventuras-programacion-python-isla-del-tesoro/appit-04-abordando-el-barco-pirata.html">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Abordando el Barco Pirata - Aventuras de Programación en Python en la Isla del Tesoro</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Abordando el Barco Pirata";
+    var mkdocs_page_input_path = "appit-04-abordando-el-barco-pirata.md";
+    var mkdocs_page_url = "/imarranz/aventuras-programacion-python-isla-del-tesoro/appit-04-abordando-el-barco-pirata.html";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> Aventuras de Programación en Python en la Isla del Tesoro</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Aventuras de Programación</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="appit-01-el-viaje-comienza.html">El Viaje Comienza</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-02-la-carta-del-capit%C3%A1n.html">La Carta al capitán</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-03-el-mapa-del-tesoro.html">El Mapa del Tesoro</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="appit-04-abordando-el-barco-pirata.html">Abordando el Barco Pirata</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-05-b%C3%BAsqueda-del-tesoro.html">Búsqueda del Tesoro</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-06-enfrentamiento-con-piratas.html">Enfrentamiento con Piratas</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-07-el-tesoro-encontrado.html">El Tesoro Encontrado</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-08-zarpa-de-la-isla.html">Zarpar de la Isla</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-09-regreso-a-casa.html">Regreso a Casa</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Más Aventuras</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-10-m%C3%A1s-aventuras-piratas.html">Más Aventuras Piratas</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ápendice</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-11-ap%C3%A9ndice.html">Ápéndice</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Fondeadero</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-12-conclusi%C3%B3n.html">Fondeadero</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">Aventuras de Programación en Python en la Isla del Tesoro</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Aventuras de Programación &raquo;</li>
+        
+      
+    
+    <li>Abordando el Barco Pirata</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/imarranz/aventuras-programacion-python-isla-del-tesoro/edit/master/docs/appit-04-abordando-el-barco-pirata.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="capitulo_4_abordando_el_barco_pirata">Capítulo 4: Abordando el Barco Pirata<a class="headerlink" href="#capitulo_4_abordando_el_barco_pirata" title="Permanent link">#</a></h1>
+<h3 id="introduccion_a_las_estructuras_de_control_condicionales">Introducción a las Estructuras de Control (Condicionales)<a class="headerlink" href="#introduccion_a_las_estructuras_de_control_condicionales" title="Permanent link">#</a></h3>
+<p>A medida que avanzamos en nuestra aventura inspirada en "La Isla del Tesoro", nos encontramos frente al imponente barco pirata del Capitán Flint. Antes de abordarlo, debemos comprender las estructuras de control en Python, específicamente, las estructuras condicionales. Estas estructuras nos permiten tomar decisiones en nuestro código y determinar el curso de la acción en función de ciertas condiciones.</p>
+<h4 id="que_son_las_estructuras_de_control_condicionales">¿Qué son las Estructuras de Control Condicionales?<a class="headerlink" href="#que_son_las_estructuras_de_control_condicionales" title="Permanent link">#</a></h4>
+<p>Las estructuras de control condicionales son herramientas en programación que nos permiten realizar acciones diferentes según se cumplan o no ciertas condiciones. Puedes pensar en ellas como tomar decisiones en tu programa, similar a cómo un capitán decide si abordar o no un barco en función de las circunstancias.</p>
+<p>En Python, las estructuras condicionales se implementan principalmente a través de las sentencias <code>if</code>, <code>elif</code> (abreviatura de "else if") y <code>else</code>. Estas sentencias nos permiten evaluar condiciones y ejecutar bloques de código específicos en función de si esas condiciones son verdaderas o falsas.</p>
+<p><strong>La Sentencia <code>if</code>: Tomando Decisiones</strong></p>
+<p>La sentencia <code>if</code> se utiliza para evaluar una condición y ejecutar un bloque de código si esa condición es verdadera. Aquí hay un ejemplo simple:</p>
+<pre><code class="language-python">edad = 15
+if edad &gt;= 18:
+    print(&quot;Eres mayor de edad. Puedes abordar el barco pirata.&quot;)
+</code></pre>
+<p>En este caso, la condición es <code>edad &gt;= 18</code>, y si es verdadera, se ejecuta la instrucción dentro del bloque <code>if</code>.</p>
+<p><strong>La Sentencia <code>elif</code>: Alternativas</strong></p>
+<p>La sentencia <code>elif</code> se utiliza cuando tenemos múltiples condiciones y queremos verificar la siguiente en caso de que la condición anterior sea falsa. Por ejemplo:</p>
+<pre><code class="language-python">edad = 15
+if edad &gt;= 18:
+    print(&quot;Eres mayor de edad. Puedes abordar el barco pirata.&quot;)
+elif edad &gt;= 16:
+    print(&quot;Eres un joven aventurero. Puedes unirte a la tripulación con restricciones.&quot;)
+else:
+    print(&quot;Aaarrr, eres demasiado joven para abordar el barco pirata.&quot;)
+</code></pre>
+<p>En este caso, estamos considerando tres escenarios diferentes en función de la edad del personaje.</p>
+<p><strong>La Sentencia <code>else</code>: Alternativa Final</strong></p>
+<p>La sentencia <code>else</code> se utiliza cuando ninguna de las condiciones anteriores es verdadera. Es la "alternativa final". Por ejemplo:</p>
+<pre><code class="language-python">color_bandera = &quot;negro&quot;
+if color_bandera == &quot;negro&quot;:
+    print(&quot;Aaarrr, la bandera es de piratas. Puedes abordar el barco.&quot;)
+else:
+    print(&quot;La bandera no es de piratas. No puedes abordar el barco.&quot;)
+</code></pre>
+<p>Si la bandera es negra, el personaje puede abordar el barco. Si no es negra, se le niega el acceso.</p>
+<p>::: tip
+¿Sabías que el nombre que recibe la bandera tradicional de los piratas, una calavera cruzada por huesos sobre un fondo negro, se llama <em>Jolly Roger</em>?
+:::</p>
+<h3 id="fondeadero">Fondeadero<a class="headerlink" href="#fondeadero" title="Permanent link">#</a></h3>
+<p>Las estructuras de control condicionales son fundamentales para tomar decisiones en la programación y determinar cómo se ejecutará un programa en función de las condiciones dadas. En el próximo capítulo, aplicaremos estas estructuras condicionales en nuestra aventura pirata mientras decidimos si podemos abordar el barco del <em>Capitán Flint</em>. ¡Sigue adelante y toma el control de tu destino pirata!</p>
+<h3 id="desarrollo_de_un_juego_de_eleccion_de_caminos_como_en_la_historia">Desarrollo de un Juego de Elección de Caminos como en la Historia<a class="headerlink" href="#desarrollo_de_un_juego_de_eleccion_de_caminos_como_en_la_historia" title="Permanent link">#</a></h3>
+<p>Estamos en un momento crucial de nuestra aventura, frente al barco pirata del temido Capitán Flint. Para hacer esta experiencia aún más emocionante, crearemos un juego de elección de caminos que refleje la toma de decisiones que se encuentran en la narrativa de "La Isla del Tesoro". A través de estructuras de control condicionales, permitiremos que el jugador decida el curso de la acción.</p>
+<h4 id="diseno_del_juego_y_las_decisiones">Diseño del Juego y las Decisiones<a class="headerlink" href="#diseno_del_juego_y_las_decisiones" title="Permanent link">#</a></h4>
+<p>En nuestro juego, el jugador tendrá que decidir si abordar o no el barco pirata. Si decide abordar, se encontrará con más opciones y desafíos. Si decide no abordar, la historia seguirá un camino diferente. Vamos a diseñar las opciones:</p>
+<ol>
+<li>
+<p><strong>Decisión 1: ¿Abordar el Barco Pirata?</strong></p>
+</li>
+<li>
+<p>Opción 1: Abordar el barco pirata.</p>
+</li>
+<li>
+<p>Opción 2: No abordar y explorar más la isla.</p>
+</li>
+<li>
+<p><strong>Decisión 2 (si se decide abordar): ¿Entrar en la Bodega o en la Cubierta?</strong></p>
+</li>
+<li>
+<p>Opción 1: Entrar en la bodega.</p>
+</li>
+<li>
+<p>Opción 2: Ir a la cubierta.</p>
+</li>
+<li>
+<p><strong>Decisión 3 (si se decide entrar en la Bodega): ¿Buscar Tesoros o Escapar?</strong></p>
+</li>
+<li>
+<p>Opción 1: Buscar tesoros en la bodega.</p>
+</li>
+<li>
+<p>Opción 2: Intentar escapar del barco.</p>
+</li>
+</ol>
+<h4 id="desarrollo_del_programa_en_python">Desarrollo del Programa en Python<a class="headerlink" href="#desarrollo_del_programa_en_python" title="Permanent link">#</a></h4>
+<p>Ahora, creemos el programa en Python que simulará este juego de elección de caminos. Utilizaremos estructuras condicionales para guiar al jugador a través de las opciones y mostrar resultados basados en esas decisiones. Aquí está el código:</p>
+<pre><code class="language-python">print(&quot;Bienvenido a la Aventura Pirata&quot;)
+
+print(&quot;Decisión 1: ¿Abordar el barco pirata?&quot;)
+decision_1 = input(&quot;Escribe '1' para abordar o '2' para explorar más la isla: &quot;)
+
+if decision_1 == &quot;1&quot;:
+    print(&quot;Has abordado el barco pirata.&quot;)
+
+    print(&quot;Decisión 2: ¿Entrar en la Bodega o en la Cubierta?&quot;)
+    decision_2 = input(&quot;Escribe '1' para entrar en la bodega o '2' para ir a la cubierta: &quot;)
+
+    if decision_2 == &quot;1&quot;:
+        print(&quot;Has entrado en la bodega del barco.&quot;)
+
+        print(&quot;Decisión 3: ¿Buscar Tesoros o Escapar?&quot;)
+        decision_3 = input(&quot;Escribe '1' para buscar tesoros o '2' para intentar escapar: &quot;)
+
+        if decision_3 == &quot;1&quot;:
+            print(&quot;Encontraste un cofre lleno de monedas de oro. Felicidades, valiente pirata.&quot;)
+        elif decision_3 == &quot;2&quot;:
+            print(&quot;Has intentado escapar, pero te han atrapado. Juego terminado.&quot;)
+        else:
+            print(&quot;Opción no válida. Juego terminado.&quot;)
+
+    elif decision_2 == &quot;2&quot;:
+        print(&quot;Has ido a la cubierta del barco. Aaarrr, Afronta el siguiente desafío, intrépido pirata&quot;)
+    else:
+        print(&quot;Opción no válida. Juego terminado.&quot;)
+
+elif decision_1 == &quot;2&quot;:
+    print(&quot;Has decidido explorar más la isla. Buena suerte en tu aventura.&quot;)
+
+else:
+    print(&quot;Opción no válida. Juego terminado.&quot;)
+</code></pre>
+<h3 id="ejecutando_el_juego">Ejecutando el Juego<a class="headerlink" href="#ejecutando_el_juego" title="Permanent link">#</a></h3>
+<p>El jugador debe escribir el número correspondiente a la opción que desea elegir en cada etapa del juego. Dependiendo de las decisiones tomadas, el juego mostrará diferentes resultados y rutas a seguir.</p>
+<p>¡Ahora estás listo para vivir esta emocionante aventura pirata a través de tu programa en Python! En el próximo capítulo, ampliaremos esta idea y la conectaremos con la historia de "La Isla del Tesoro". ¡Sigue adelante y toma el control de tu destino pirata!</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="appit-05-b%C3%BAsqueda-del-tesoro.html" class="btn btn-neutral float-right" title="Búsqueda del Tesoro">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="appit-03-el-mapa-del-tesoro.html" class="btn btn-neutral" title="El Mapa del Tesoro"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p><b>Aventuras de Programación en Python en la Isla del Tesoro</b> <br>Copyright &#169; 2024 <a href="https://github.com/imarranz">Ibon Martínez-Arranz</a><br></p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/imarranz/aventuras-programacion-python-isla-del-tesoro/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="appit-03-el-mapa-del-tesoro.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="appit-05-b%C3%BAsqueda-del-tesoro.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

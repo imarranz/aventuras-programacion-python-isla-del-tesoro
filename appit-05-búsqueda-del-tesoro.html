@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ibon Martínez-Arranz">
+  <link rel="canonical" href="https://github.com/imarranz/aventuras-programacion-python-isla-del-tesoro/appit-05-b%C3%BAsqueda-del-tesoro.html">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Búsqueda del Tesoro - Aventuras de Programación en Python en la Isla del Tesoro</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "B\u00fasqueda del Tesoro";
+    var mkdocs_page_input_path = "appit-05-b\u00fasqueda-del-tesoro.md";
+    var mkdocs_page_url = "/imarranz/aventuras-programacion-python-isla-del-tesoro/appit-05-b%C3%BAsqueda-del-tesoro.html";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> Aventuras de Programación en Python en la Isla del Tesoro</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Aventuras de Programación</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="appit-01-el-viaje-comienza.html">El Viaje Comienza</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-02-la-carta-del-capit%C3%A1n.html">La Carta al capitán</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-03-el-mapa-del-tesoro.html">El Mapa del Tesoro</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-04-abordando-el-barco-pirata.html">Abordando el Barco Pirata</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="appit-05-b%C3%BAsqueda-del-tesoro.html">Búsqueda del Tesoro</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-06-enfrentamiento-con-piratas.html">Enfrentamiento con Piratas</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-07-el-tesoro-encontrado.html">El Tesoro Encontrado</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-08-zarpa-de-la-isla.html">Zarpar de la Isla</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-09-regreso-a-casa.html">Regreso a Casa</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Más Aventuras</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-10-m%C3%A1s-aventuras-piratas.html">Más Aventuras Piratas</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ápendice</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-11-ap%C3%A9ndice.html">Ápéndice</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Fondeadero</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-12-conclusi%C3%B3n.html">Fondeadero</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">Aventuras de Programación en Python en la Isla del Tesoro</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Aventuras de Programación &raquo;</li>
+        
+      
+    
+    <li>Búsqueda del Tesoro</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/imarranz/aventuras-programacion-python-isla-del-tesoro/edit/master/docs/appit-05-búsqueda-del-tesoro.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="capitulo_5_busqueda_del_tesoro">Capítulo 5: Búsqueda del Tesoro<a class="headerlink" href="#capitulo_5_busqueda_del_tesoro" title="Permanent link">#</a></h1>
+<h3 id="utilizacion_de_bucles_loops_para_buscar_el_tesoro_en_la_isla">Utilización de Bucles (Loops) para Buscar el Tesoro en la Isla<a class="headerlink" href="#utilizacion_de_bucles_loops_para_buscar_el_tesoro_en_la_isla" title="Permanent link">#</a></h3>
+<p>A medida que continuamos nuestra emocionante búsqueda inspirada en "La Isla del Tesoro", nos encontramos en un punto crucial donde debemos utilizar bucles (loops) en Python para rastrear y buscar tesoros en la isla. Los bucles nos permiten repetir tareas y explorar minuciosamente cada rincón en busca de riquezas ocultas.</p>
+<h3 id="que_son_los_bucles_loops">¿Qué son los Bucles (Loops)?<a class="headerlink" href="#que_son_los_bucles_loops" title="Permanent link">#</a></h3>
+<p>Los bucles son estructuras de control que nos permiten ejecutar un bloque de código repetidamente mientras se cumple una condición. Puedes imaginarlos como un pirata caminando por la isla, buscando tesoros en cada paso hasta que se agote.</p>
+<p>En Python, los bucles más comunes son el bucle <code>for</code> y el bucle <code>while</code>. Utilizaremos el bucle <code>for</code> en nuestra búsqueda de tesoros, ya que sabemos de antemano cuántas ubicaciones queremos explorar.</p>
+<h3 id="bucles_for_en_la_busqueda_de_tesoros">Bucles <code>for</code> en la Búsqueda de Tesoros<a class="headerlink" href="#bucles_for_en_la_busqueda_de_tesoros" title="Permanent link">#</a></h3>
+<p>Vamos a utilizar un bucle <code>for</code> para explorar las ubicaciones de nuestro mapa del tesoro y buscar tesoros en cada una de ellas. Aquí hay un ejemplo de cómo se vería el código:</p>
+<pre><code class="language-python"># Lista de ubicaciones del tesoro
+ubicaciones_del_tesoro = [&quot;Playa del Naufragio&quot;,
+                          &quot;Bosque Encantado&quot;,
+                          &quot;Cueva Misteriosa&quot;,
+                          &quot;Calavera del Corsario&quot;]
+
+# Bucle for para explorar las ubicaciones
+for ubicacion in ubicaciones_del_tesoro:
+    print(f&quot;Explorando la {ubicacion}...&quot;)
+
+    # Lógica para buscar tesoros (se agregaría aquí)
+    # Si se encuentra un tesoro, mostrar un mensaje
+
+print(&quot;Búsqueda de tesoros completada.&quot;)
+</code></pre>
+<p>En este código, hemos definido una lista <code>ubicaciones_del_tesoro</code> que contiene las ubicaciones a explorar. Luego, utilizamos un bucle <code>for</code> para recorrer cada ubicación y mostrar un mensaje de exploración. La lógica para buscar tesoros se agregaría en el lugar indicado.</p>
+<h3 id="logica_para_buscar_tesoros">Lógica para Buscar Tesoros<a class="headerlink" href="#logica_para_buscar_tesoros" title="Permanent link">#</a></h3>
+<p>Dentro del bucle <code>for</code>, puedes agregar la lógica necesaria para buscar tesoros en cada ubicación. Por ejemplo, puedes utilizar estructuras condicionales (<code>if</code>, <code>elif</code>, <code>else</code>) para determinar si se ha encontrado un tesoro en una ubicación específica y mostrar un mensaje apropiado.</p>
+<pre><code class="language-python">for ubicacion in ubicaciones_del_tesoro:
+    print(f&quot;Explorando la {ubicacion}...&quot;)
+
+    # Lógica para buscar tesoros en la ubicación actual (se agregaría aquí)
+    if ubicacion == &quot;Cueva Misteriosa&quot;:
+        print(&quot;Has encontrado un cofre lleno de monedas de oro.&quot;)
+
+print(&quot;Búsqueda de tesoros completada.&quot;)
+</code></pre>
+<p>Este es solo un ejemplo simple de cómo podrías estructurar la lógica de búsqueda. La lógica real dependerá de los detalles de tu juego y de cómo deseas que se desenvuelva la historia.</p>
+<h3 id="fondeadero">Fondeadero<a class="headerlink" href="#fondeadero" title="Permanent link">#</a></h3>
+<p>Los bucles <code>for</code> son herramientas poderosas que nos permiten realizar tareas repetitivas de manera eficiente en Python. En nuestra búsqueda del tesoro en "La Isla del Tesoro", utilizaremos bucles <code>for</code> para explorar las ubicaciones y buscar tesoros en cada paso de nuestra emocionante aventura. ¡Sigue adelante y busca el tesoro perdido, valiente buscador de tesoros!</p>
+<h3 id="creacion_de_un_programa_que_simula_la_busqueda">Creación de un Programa que Simula la Búsqueda<a class="headerlink" href="#creacion_de_un_programa_que_simula_la_busqueda" title="Permanent link">#</a></h3>
+<p>Estamos listos para llevar a cabo la búsqueda del tesoro en "La Isla del Tesoro" a través de un programa en Python que simulará esta emocionante aventura. Utilizaremos los conceptos de bucles <code>for</code>, listas y estructuras condicionales para crear una experiencia de búsqueda interactiva.</p>
+<h4 id="diseno_del_programa_de_busqueda">Diseño del Programa de Búsqueda<a class="headerlink" href="#diseno_del_programa_de_busqueda" title="Permanent link">#</a></h4>
+<p>Antes de escribir el código, necesitamos diseñar cómo se desarrollará la búsqueda del tesoro. En este programa, simularemos la exploración de cuatro ubicaciones en busca de tesoros. Las ubicaciones son las siguientes:</p>
+<ul>
+<li>
+<p><strong>Playa del Naufragio</strong>: Una playa desolada y misteriosa donde las olas rompen suavemente en la orilla. Restos de naufragios antiguos yacen dispersos por la arena, ocultando secretos de marineros perdidos en el tiempo.</p>
+</li>
+<li>
+<p><strong>Bosque Encantado</strong>: Un bosque misterioso donde los árboles parecen susurrar secretos mientras las luces parpadean entre las ramas. Se rumorea que criaturas mágicas y guardianes antiguos protegen los tesoros escondidos en su interior.</p>
+</li>
+<li>
+<p><strong>Cueva Misteriosa</strong>: Una cueva oscura y húmeda que se adentra profundamente en la isla. En su interior, las paredes están decoradas con inscripciones de corsarios olvidados y extraños símbolos. Se cree que esta cueva guarda un mapa del tesoro codiciado.</p>
+</li>
+<li>
+<p><strong>Calavera del Corsario</strong>: Una formación de roca natural en la costa de la isla que se asemeja a la calavera de un temido corsario. La leyenda dice que debajo de esta calavera yace un tesoro perdido, esperando a ser desenterrado por un valiente aventurero.</p>
+</li>
+</ul>
+<p>En cada ubicación, el jugador tendrá la oportunidad de buscar tesoros. Si encuentra un tesoro, se le mostrará un mensaje de éxito. Si no encuentra un tesoro, continuará explorando las ubicaciones restantes.</p>
+<p><img alt="" src="figures/ubicaciones-tesoro.png" /></p>
+<h4 id="desarrollo_del_programa_en_python">Desarrollo del Programa en Python<a class="headerlink" href="#desarrollo_del_programa_en_python" title="Permanent link">#</a></h4>
+<p>Aquí está el código en Python que simula esta búsqueda del tesoro:</p>
+<pre><code class="language-python"># Lista de ubicaciones del tesoro
+ubicaciones_del_tesoro = [&quot;Playa del Naufragio&quot;,
+                          &quot;Bosque Encantado&quot;,
+                          &quot;Cueva Misteriosa&quot;,
+                          &quot;Calavera del Corsario&quot;]
+
+print(&quot;Bienvenido a la búsqueda del tesoro&quot;)
+
+# Bucle for para explorar las ubicaciones
+for ubicacion in ubicaciones_del_tesoro:
+    print(f&quot;Explorando la {ubicacion}...&quot;)
+
+    # Simulación de búsqueda de tesoro
+    busqueda_exitosa = False  # Inicialmente, no se ha encontrado un tesoro
+
+    # Lógica para buscar tesoros en la ubicación actual
+    if ubicacion == &quot;Cueva Misteriosa&quot;:
+        print(&quot;Has encontrado un cofre lleno de monedas de oro.&quot;)
+        busqueda_exitosa = True
+
+    # Mensaje si se encuentra un tesoro
+    if busqueda_exitosa:
+        print(&quot;Felicidades, valiente grumete.&quot;)
+    else:
+        print(&quot;No encontraste ningún tesoro en esta ubicación.&quot;)
+
+print(&quot;Búsqueda de tesoros completada.&quot;)
+</code></pre>
+<p>En este programa, utilizamos un bucle <code>for</code> para recorrer cada ubicación en <code>ubicaciones_del_tesoro</code>. Simulamos la búsqueda de tesoros en la ubicación actual utilizando una variable <code>busqueda_exitosa</code>. Si se encuentra un tesoro, se establece <code>busqueda_exitosa</code> en <code>True</code> y se muestra un mensaje de éxito. Si no se encuentra un tesoro, se muestra un mensaje de que no se encontró ningún tesoro en esa ubicación.</p>
+<h3 id="ejecutando_la_busqueda_del_tesoro">Ejecutando la Búsqueda del Tesoro<a class="headerlink" href="#ejecutando_la_busqueda_del_tesoro" title="Permanent link">#</a></h3>
+<p>El jugador puede ejecutar el programa y explorar cada ubicación en busca de tesoros. La historia se desarrollará de acuerdo a las decisiones tomadas.</p>
+<p>¡Prepárate para vivir la emocionante búsqueda del tesoro en "La Isla del Tesoro" a través de tu programa en Python! En los próximos capítulos, expandiremos aún más esta aventura y agregaremos desafíos adicionales. ¡Sigue explorando y disfrutando de tu búsqueda de tesoros!</p>
+<p>¿Te animas a modificar el código para añadir otras dos ubicaciones más? por ejemplo se podría añadir el <strong>Arrecife del Kraken</strong>, un arrefice donde deberás enfrentarte al legendario Kraken si quieres encontrar el tesoro, o el <strong>Islote de los Monos Piratas</strong>, un pequeño islote habitado por una banda de malvados monos que se han convertido en piratas y han enterrado sus propios tesoros.</p>
+<p>También puedes mejorar el juego si cambias la ubicación. Podrías hacerlo usando variables.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="appit-06-enfrentamiento-con-piratas.html" class="btn btn-neutral float-right" title="Enfrentamiento con Piratas">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="appit-04-abordando-el-barco-pirata.html" class="btn btn-neutral" title="Abordando el Barco Pirata"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p><b>Aventuras de Programación en Python en la Isla del Tesoro</b> <br>Copyright &#169; 2024 <a href="https://github.com/imarranz">Ibon Martínez-Arranz</a><br></p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/imarranz/aventuras-programacion-python-isla-del-tesoro/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="appit-04-abordando-el-barco-pirata.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="appit-06-enfrentamiento-con-piratas.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

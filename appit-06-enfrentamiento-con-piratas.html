@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ibon Martínez-Arranz">
+  <link rel="canonical" href="https://github.com/imarranz/aventuras-programacion-python-isla-del-tesoro/appit-06-enfrentamiento-con-piratas.html">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Enfrentamiento con Piratas - Aventuras de Programación en Python en la Isla del Tesoro</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Enfrentamiento con Piratas";
+    var mkdocs_page_input_path = "appit-06-enfrentamiento-con-piratas.md";
+    var mkdocs_page_url = "/imarranz/aventuras-programacion-python-isla-del-tesoro/appit-06-enfrentamiento-con-piratas.html";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> Aventuras de Programación en Python en la Isla del Tesoro</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Aventuras de Programación</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="appit-01-el-viaje-comienza.html">El Viaje Comienza</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-02-la-carta-del-capit%C3%A1n.html">La Carta al capitán</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-03-el-mapa-del-tesoro.html">El Mapa del Tesoro</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-04-abordando-el-barco-pirata.html">Abordando el Barco Pirata</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-05-b%C3%BAsqueda-del-tesoro.html">Búsqueda del Tesoro</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="appit-06-enfrentamiento-con-piratas.html">Enfrentamiento con Piratas</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-07-el-tesoro-encontrado.html">El Tesoro Encontrado</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-08-zarpa-de-la-isla.html">Zarpar de la Isla</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-09-regreso-a-casa.html">Regreso a Casa</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Más Aventuras</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-10-m%C3%A1s-aventuras-piratas.html">Más Aventuras Piratas</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ápendice</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-11-ap%C3%A9ndice.html">Ápéndice</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Fondeadero</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-12-conclusi%C3%B3n.html">Fondeadero</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">Aventuras de Programación en Python en la Isla del Tesoro</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Aventuras de Programación &raquo;</li>
+        
+      
+    
+    <li>Enfrentamiento con Piratas</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/imarranz/aventuras-programacion-python-isla-del-tesoro/edit/master/docs/appit-06-enfrentamiento-con-piratas.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="capitulo_6_enfrentamiento_con_piratas">Capítulo 6: Enfrentamiento con Piratas<a class="headerlink" href="#capitulo_6_enfrentamiento_con_piratas" title="Permanent link">#</a></h1>
+<h3 id="introduccion_a_las_funciones_y_como_usarlas">Introducción a las Funciones y Cómo Usarlas<a class="headerlink" href="#introduccion_a_las_funciones_y_como_usarlas" title="Permanent link">#</a></h3>
+<p>A medida que avanzamos en nuestra travesía por la programación y nos acercamos al emocionante enfrentamiento con piratas, es esencial comprender y dominar un concepto crucial en Python: las funciones. Las funciones nos permiten encapsular código en bloques reutilizables, simplificando nuestro programa y permitiéndonos abordar desafíos de manera más eficiente.</p>
+<h3 id="que_son_las_funciones">¿Qué son las Funciones?<a class="headerlink" href="#que_son_las_funciones" title="Permanent link">#</a></h3>
+<p>En programación, una función es un bloque de código diseñado para realizar una tarea específica. Imagina una función como un miembro especializado de la tripulación que realiza una tarea particular cuando se le da una orden. Podemos llamar a esta función en diferentes partes de nuestro programa para ejecutar esa tarea sin tener que escribir el mismo código una y otra vez.</p>
+<h3 id="beneficios_de_usar_funciones">Beneficios de Usar Funciones<a class="headerlink" href="#beneficios_de_usar_funciones" title="Permanent link">#</a></h3>
+<ul>
+<li>
+<p><strong>Reutilización de Código</strong>: Una vez que definimos una función, podemos usarla en múltiples lugares de nuestro programa, evitando la duplicación de código.</p>
+</li>
+<li>
+<p><strong>Modularidad</strong>: Las funciones nos permiten dividir nuestro programa en partes más pequeñas y manejables, facilitando la comprensión y el mantenimiento del código.</p>
+</li>
+<li>
+<p><strong>Abstracción</strong>: Las funciones nos permiten abstraer detalles complejos detrás de una interfaz simple. Podemos usar funciones sin necesidad de conocer todos los detalles internos de cómo están implementadas.</p>
+</li>
+</ul>
+<h3 id="como_definir_y_utilizar_funciones_en_python">Cómo Definir y Utilizar Funciones en Python<a class="headerlink" href="#como_definir_y_utilizar_funciones_en_python" title="Permanent link">#</a></h3>
+<p>Para definir una función en Python, utilizamos la palabra clave <code>def</code>, seguida del nombre de la función y paréntesis que pueden contener parámetros. Aquí está un ejemplo básico:</p>
+<pre><code class="language-python">def saludar():
+    print(&quot;Ahoy, grumete. Preparados para el enfrentamiento.&quot;)
+</code></pre>
+<p>Para llamar a una función, simplemente escribimos su nombre seguido de paréntesis. Por ejemplo:</p>
+<pre><code class="language-python">saludar()
+</code></pre>
+<p>En este capítulo, aprenderemos a crear y utilizar funciones para abordar los desafíos que se presenten en nuestro enfrentamiento con los piratas. ¡Sigamos adelante y preparemos nuestra tripulación para esta épica batalla!</p>
+<h3 id="desarrollo_de_un_juego_de_batalla_contra_piratas_usando_funciones">Desarrollo de un Juego de Batalla contra Piratas Usando Funciones<a class="headerlink" href="#desarrollo_de_un_juego_de_batalla_contra_piratas_usando_funciones" title="Permanent link">#</a></h3>
+<p>En este emocionante capítulo, nos sumergiremos en la acción de alto mar mientras desarrollamos un juego de batalla contra piratas utilizando las habilidades de programación que hemos adquirido hasta ahora, especialmente el concepto de funciones. Esta aventura nos llevará a enfrentarnos a enemigos piratas y tomar decisiones cruciales en cada paso del camino.</p>
+<h4 id="diseno_del_juego_de_batalla">Diseño del Juego de Batalla<a class="headerlink" href="#diseno_del_juego_de_batalla" title="Permanent link">#</a></h4>
+<p>Antes de comenzar a programar, debemos diseñar cómo se desarrollará nuestro juego de batalla. En nuestro juego, el jugador asumirá el papel del valiente capitán que debe enfrentarse a una tripulación pirata enemiga. Aquí están los elementos clave:</p>
+<ol>
+<li>
+<p><strong>Salud del Jugador y del Enemigo</strong>: Tanto el jugador como los piratas tendrán una cantidad de salud que disminuirá cuando se ataquen mutuamente.</p>
+</li>
+<li>
+<p><strong>Ataques y Defensa</strong>: El jugador podrá elegir entre diferentes tipos de ataques (por ejemplo, espada o cañón) y también tendrá opciones de defensa (por ejemplo, esquivar o bloquear).</p>
+</li>
+<li>
+<p><strong>Toma de Decisiones</strong>: El jugador deberá tomar decisiones estratégicas en cada turno, seleccionando un ataque o una defensa para cada ronda de batalla.</p>
+</li>
+<li>
+<p><strong>Resultados de la Batalla</strong>: Basado en las decisiones del jugador y las acciones de los piratas, se determinará el resultado de la batalla.</p>
+</li>
+</ol>
+<h4 id="desarrollo_del_programa_en_python">Desarrollo del Programa en Python<a class="headerlink" href="#desarrollo_del_programa_en_python" title="Permanent link">#</a></h4>
+<p>A continuación, desarrollaremos un juego de batalla básico contra piratas utilizando funciones en Python. Este es solo un ejemplo simplificado para ilustrar el concepto. Puedes expandir y personalizar el juego según tus preferencias.</p>
+<pre><code class="language-python"># random es una librería que genera valores aleatorios
+import random
+
+# Función para realizar un ataque
+def atacar():
+    return random.randint(10, 20)
+
+# Función para realizar una defensa
+def defender():
+    return random.randint(5, 15)
+
+# Salud inicial del jugador y de los piratas
+salud_jugador = 100
+salud_piratas = 100
+
+# Ciclo de batalla
+while salud_jugador &gt; 0 and salud_piratas &gt; 0:
+    print(&quot;Piratas a la vista&quot;)
+
+    # Jugador elige su acción
+    accion = input(&quot;¿Qué acción deseas tomar? (atacar/defender): &quot;)
+
+    # Realizar acción del jugador y de los piratas
+    if accion == &quot;atacar&quot;:
+        danio_jugador = atacar()
+        danio_piratas = atacar()
+    elif accion == &quot;defender&quot;:
+        danio_jugador = defender()
+        danio_piratas = atacar() - defender()
+        danio_piratas = max(0, danio_piratas)  # No puede ser un valor negativo
+    else:
+        print(&quot;Acción no válida. Pierdes un turno.&quot;)
+        continue
+
+    # Actualizar la salud
+    salud_jugador -= danio_piratas
+    salud_piratas -= danio_jugador
+
+    print(f&quot;Tu salud: {salud_jugador}&quot;)
+    print(f&quot;Salud de los piratas: {salud_piratas}&quot;)
+
+# Determinar el resultado de la batalla
+if salud_jugador &lt;= 0:
+    print(&quot;Los piratas han ganado la batalla. Has perdido.&quot;)
+else:
+    print(&quot;Victoria. Has derrotado a los piratas y salvado la Isla del Tesoro.&quot;)
+</code></pre>
+<h3 id="ejecutando_batalla_contra_piratas">Ejecutando Batalla contra Piratas<a class="headerlink" href="#ejecutando_batalla_contra_piratas" title="Permanent link">#</a></h3>
+<p>Este programa simula una batalla donde el jugador puede elegir entre atacar o defender en cada turno. Los resultados se determinan mediante cálculos de salud y daño. Puedes expandir y personalizar este juego según tus preferencias, agregando más acciones, enemigos y desafíos.</p>
+<p>¿Te animas a cambiar la función? Podrías aumentar las posibilidades de ganar a los piratas cambiando <code>salud_jugador = 200</code> y <code>salud_piratas = 50</code> pero igual es hacer trampas ¿no?</p>
+<p>¡Prepárate para enfrentarte a los piratas y demostrar tu valentía en la próxima batalla en alta mar!</p>
+<p><img alt="" src="figures/batalla-naval.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="appit-07-el-tesoro-encontrado.html" class="btn btn-neutral float-right" title="El Tesoro Encontrado">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="appit-05-b%C3%BAsqueda-del-tesoro.html" class="btn btn-neutral" title="Búsqueda del Tesoro"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p><b>Aventuras de Programación en Python en la Isla del Tesoro</b> <br>Copyright &#169; 2024 <a href="https://github.com/imarranz">Ibon Martínez-Arranz</a><br></p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/imarranz/aventuras-programacion-python-isla-del-tesoro/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="appit-05-b%C3%BAsqueda-del-tesoro.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="appit-07-el-tesoro-encontrado.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

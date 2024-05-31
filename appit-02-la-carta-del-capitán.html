@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ibon Martínez-Arranz">
+  <link rel="canonical" href="https://github.com/imarranz/aventuras-programacion-python-isla-del-tesoro/appit-02-la-carta-del-capit%C3%A1n.html">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>La Carta al capitán - Aventuras de Programación en Python en la Isla del Tesoro</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "La Carta al capit\u00e1n";
+    var mkdocs_page_input_path = "appit-02-la-carta-del-capit\u00e1n.md";
+    var mkdocs_page_url = "/imarranz/aventuras-programacion-python-isla-del-tesoro/appit-02-la-carta-del-capit%C3%A1n.html";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> Aventuras de Programación en Python en la Isla del Tesoro</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Aventuras de Programación</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="appit-01-el-viaje-comienza.html">El Viaje Comienza</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="appit-02-la-carta-del-capit%C3%A1n.html">La Carta al capitán</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-03-el-mapa-del-tesoro.html">El Mapa del Tesoro</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-04-abordando-el-barco-pirata.html">Abordando el Barco Pirata</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-05-b%C3%BAsqueda-del-tesoro.html">Búsqueda del Tesoro</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-06-enfrentamiento-con-piratas.html">Enfrentamiento con Piratas</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-07-el-tesoro-encontrado.html">El Tesoro Encontrado</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-08-zarpa-de-la-isla.html">Zarpar de la Isla</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-09-regreso-a-casa.html">Regreso a Casa</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Más Aventuras</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-10-m%C3%A1s-aventuras-piratas.html">Más Aventuras Piratas</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ápendice</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-11-ap%C3%A9ndice.html">Ápéndice</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Fondeadero</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="appit-12-conclusi%C3%B3n.html">Fondeadero</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">Aventuras de Programación en Python en la Isla del Tesoro</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Aventuras de Programación &raquo;</li>
+        
+      
+    
+    <li>La Carta al capitán</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/imarranz/aventuras-programacion-python-isla-del-tesoro/edit/master/docs/appit-02-la-carta-del-capitán.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="capitulo_2_la_carta_del_capitan">Capítulo 2: La Carta del Capitán<a class="headerlink" href="#capitulo_2_la_carta_del_capitan" title="Permanent link">#</a></h1>
+<h3 id="trabajando_con_cadenas_de_texto">Trabajando con Cadenas de Texto<a class="headerlink" href="#trabajando_con_cadenas_de_texto" title="Permanent link">#</a></h3>
+<p>En nuestro emocionante viaje inspirado en "La Isla del Tesoro", es momento de descubrir cómo trabajar con cadenas de texto en Python. Las cadenas de texto son una parte fundamental de la programación, ya que nos permiten manejar palabras, frases y mensajes. ¿Listos para desentrañar el misterio de la carta del capitán?</p>
+<h3 id="que_son_las_cadenas_de_texto">¿Qué Son las Cadenas de Texto?<a class="headerlink" href="#que_son_las_cadenas_de_texto" title="Permanent link">#</a></h3>
+<p>Una cadena de texto, en Python, es simplemente una secuencia de caracteres, como letras, números, espacios y símbolos. Puedes pensar en ellas como las palabras que componen una oración o el contenido de una carta, como la que el <em>Capitán Flint</em> dejó atrás.</p>
+<h3 id="creacion_de_cadenas_de_texto">Creación de Cadenas de Texto<a class="headerlink" href="#creacion_de_cadenas_de_texto" title="Permanent link">#</a></h3>
+<p>Para crear una cadena de texto en Python, puedes usar comillas simples '' o comillas dobles "". Aquí tienes ejemplos de ambas formas:</p>
+<pre><code class="language-python">nombre = 'Jim Hawkins'
+mensaje = &quot;El tesoro está enterrado bajo el roble.&quot;
+</code></pre>
+<p>Ambos ejemplos son válidos, y la elección entre comillas simples o dobles depende de tus preferencias personales o de si necesitas incluir comillas dentro de la cadena.</p>
+<h3 id="concatenacion_de_cadenas_de_texto">Concatenación de Cadenas de Texto<a class="headerlink" href="#concatenacion_de_cadenas_de_texto" title="Permanent link">#</a></h3>
+<p>La concatenación es el proceso de unir cadenas de texto. Puedes unir dos o más cadenas usando el operador <code>+</code>. Por ejemplo:</p>
+<pre><code class="language-python">saludo = &quot;Hola,&quot;
+nombre = &quot; Jim Hawkins&quot;
+mensaje_completo = saludo + nombre
+</code></pre>
+<p>En este caso, <code>mensaje_completo</code> contendrá la cadena "Hola, Jim Hawkins".</p>
+<h3 id="imprimiendo_cadenas_de_texto">Imprimiendo Cadenas de Texto<a class="headerlink" href="#imprimiendo_cadenas_de_texto" title="Permanent link">#</a></h3>
+<p>Ya sabemos cómo crear y unir cadenas de texto, pero ¿cómo las mostramos en la pantalla? Para esto, utilizamos la función <code>print()</code>. Por ejemplo:</p>
+<pre><code class="language-python">nombre = &quot;Jim Hawkins&quot;
+print(&quot;Hola,&quot;, nombre, )
+</code></pre>
+<p>El resultado será:</p>
+<pre><code>Hola, Jim Hawkins
+</code></pre>
+<p>Observa cómo hemos usado comas para separar las partes del mensaje que queremos unir. La función <code>print()</code> se encarga de formatear adecuadamente la salida.</p>
+<h3 id="manipulando_cadenas_de_texto">Manipulando Cadenas de Texto<a class="headerlink" href="#manipulando_cadenas_de_texto" title="Permanent link">#</a></h3>
+<p>Python ofrece una amplia gama de herramientas para trabajar con cadenas de texto. Puedes obtener la longitud de una cadena usando <code>len()</code>, convertir texto a mayúsculas o minúsculas con <code>upper()</code> y <code>lower()</code>, y mucho más. Estas habilidades te serán útiles a medida que avancemos en nuestra aventura y necesites procesar información textual.</p>
+<h3 id="fondeadero">Fondeadero<a class="headerlink" href="#fondeadero" title="Permanent link">#</a></h3>
+<p>Ahora que hemos explorado el mundo de las cadenas de texto en Python, estás listo para enfrentar los desafíos que se avecinan en la búsqueda del tesoro pirata. En el próximo capítulo, usaremos nuestras habilidades recién adquiridas para analizar la carta del <em>Capitán Flint</em> y descubrir pistas ocultas. ¡Prepara tu lupa y tu ingenio, aventurero!</p>
+<h2 id="imprimir_mensajes_personalizados">Imprimir Mensajes Personalizados<a class="headerlink" href="#imprimir_mensajes_personalizados" title="Permanent link">#</a></h2>
+<p>Ahora que hemos aprendido sobre las cadenas de texto en Python, es hora de aplicar ese conocimiento para imprimir mensajes personalizados en nuestra búsqueda del tesoro en "La Isla del Tesoro". Los mensajes personalizados son útiles para interactuar con el usuario y proporcionar información relevante en tus programas.</p>
+<h3 id="mensajes_personalizados_con_variables">Mensajes Personalizados con Variables<a class="headerlink" href="#mensajes_personalizados_con_variables" title="Permanent link">#</a></h3>
+<p>La verdadera magia de Python radica en cómo puedes combinar variables y cadenas de texto para crear mensajes personalizados. Vamos a ver cómo hacerlo con un ejemplo:</p>
+<p>Supongamos que queremos saludar al usuario y mostrar su nombre. Primero, pediremos al usuario que ingrese su nombre:</p>
+<pre><code class="language-python">nombre = input(&quot;Por favor, ingresa tu nombre: &quot;)
+</code></pre>
+<p>La función <code>input()</code> permite que el usuario escriba información en la consola. Luego, almacenamos esa información en la variable <code>nombre</code>.</p>
+<p>Ahora, podemos usar esta variable para crear un mensaje personalizado y mostrarlo en la pantalla:</p>
+<pre><code class="language-python">print(&quot;Hola,&quot;, nombre, &quot; Bienvenido a la búsqueda del tesoro.&quot;)
+</code></pre>
+<p>En este código, hemos combinado el mensaje "Hola," con el valor de la variable <code>nombre</code> y el mensaje "Bienvenido a la búsqueda del tesoro.". Cuando ejecutamos el programa, le pedirá al usuario su nombre y luego mostrará un saludo personalizado.</p>
+<h3 id="formateo_de_cadenas_de_texto">Formateo de Cadenas de Texto<a class="headerlink" href="#formateo_de_cadenas_de_texto" title="Permanent link">#</a></h3>
+<p>Otra forma común de crear mensajes personalizados es utilizando el formateo de cadenas de texto. Python proporciona varias formas de hacer esto, y una de las más utilizadas es f-string. Con f-strings, puedes incorporar valores de variables directamente en una cadena utilizando llaves <code>{}</code>. Por ejemplo:</p>
+<pre><code class="language-python">nombre = &quot;Jim Hawkins&quot;
+edad = 14
+
+mensaje = f&quot;Hola, soy {nombre} y tengo {edad} años&quot;
+print(mensaje)
+</code></pre>
+<p>El resultado será el mismo que antes:</p>
+<pre><code>^^21Hola, soy Jim Hawkins y tengo 14 años!
+</code></pre>
+<p>Podemos probar con otros personajes de la novela, como el <em>Dr. Livesey</em> (<code>nombre = "Dr. Livesey</code> y <code>edad = 43</code>) o el pirata <em>Long John Silver</em> (<code>nombre = Long John Silver</code> y <code>edad = 45</code>)</p>
+<h3 id="mensajes_personalizados_y_la_busqueda_del_tesoro">Mensajes Personalizados y la Búsqueda del Tesoro<a class="headerlink" href="#mensajes_personalizados_y_la_busqueda_del_tesoro" title="Permanent link">#</a></h3>
+<p>A medida que avances en nuestra aventura inspirada en "La Isla del Tesoro", usarás mensajes personalizados para guiar al usuario, dar pistas y comunicarte con los personajes de la historia. Las posibilidades son infinitas, y estas habilidades serán esenciales para crear una experiencia de juego envolvente.</p>
+<h3 id="fondeadero_1">Fondeadero<a class="headerlink" href="#fondeadero_1" title="Permanent link">#</a></h3>
+<p>Has aprendido cómo imprimir mensajes personalizados en Python utilizando variables y formateo de cadenas de texto. Esta habilidad te será útil a medida que te adentres más en la búsqueda del tesoro pirata en "La Isla del Tesoro". En el próximo capítulo, exploraremos aún más cómo trabajar con texto en Python mientras desentrañamos pistas y secretos ocultos en la carta del capitán Flint. ¡Sigue adelante, intrépido buscador de tesoros!</p>
+<h2 id="desarrollo_de_un_programa_que_muestra_una_carta_de_un_pirata">Desarrollo de un Programa que Muestra una Carta de un Pirata<a class="headerlink" href="#desarrollo_de_un_programa_que_muestra_una_carta_de_un_pirata" title="Permanent link">#</a></h2>
+<p>En nuestra emocionante búsqueda del tesoro inspirada en "La Isla del Tesoro", ahora es el momento perfecto para crear un programa que simule la visualización de una carta de un pirata. Utilizaremos nuestras habilidades recién adquiridas en Python para dar vida a esta experiencia.</p>
+<h3 id="preparando_el_terreno">Preparando el Terreno<a class="headerlink" href="#preparando_el_terreno" title="Permanent link">#</a></h3>
+<p>Primero, necesitamos preparar el contenido de la carta que queremos mostrar. Crearemos una carta del <em>Capitán Flint</em> para darle un toque auténtico a nuestra historia. Aquí está el contenido de la carta:</p>
+<pre><code>Queridos piratas,
+
+Os escribo desde lo más profundo de la isla. El tesoro está enterrado bajo un roble en la playa, cerca de la calavera de un antiguo corsario. Debéis encontrar la calavera y seguir sus ojos vacíos hacia el roble.
+
+La recompensa será vuestra si tenéis el coraje de buscarla.
+
+Buena suerte, valientes.
+
+Atentamente,
+Capitán Flint
+</code></pre>
+<h3 id="creacion_del_programa_en_python">Creación del Programa en Python<a class="headerlink" href="#creacion_del_programa_en_python" title="Permanent link">#</a></h3>
+<p>Ahora que tenemos el contenido de la carta, crearemos un programa en Python para mostrarla en la pantalla. Aquí está el código:</p>
+<pre><code class="language-python"># Contenido de la carta
+carta = &quot;&quot;&quot;
+Queridos piratas,
+
+Os escribo desde lo más profundo de la isla. El tesoro está enterrado bajo un roble en la playa, cerca de la calavera de un antiguo corsario. Debéis encontrar la calavera y seguir sus ojos vacíos hacia el roble.
+
+La recompensa será vuestra si tenéis el coraje de buscarla.
+
+Buena suerte, valientes.
+
+Atentamente,
+Capitán Flint
+&quot;&quot;&quot;
+
+# Mostrar la carta en la pantalla
+print(carta)
+</code></pre>
+<p>En este código, hemos almacenado el contenido de la carta en una variable llamada <code>carta</code> y luego utilizamos la función <code>print()</code> para mostrarla en la pantalla. La carta está rodeada por tres comillas triples (""") para que pueda abarcar varias líneas sin problemas.</p>
+<h3 id="ejecutando_el_programa">Ejecutando el Programa<a class="headerlink" href="#ejecutando_el_programa" title="Permanent link">#</a></h3>
+<p>Ahora, ejecutemos nuestro programa para ver la carta del <em>Capitán Flint</em>. Abre tu consola de Linux, copia y pega el código anterior, y presiona "Enter". Verás la carta en la pantalla, como si estuvieras leyendo un mensaje de un verdadero pirata.</p>
+<p>¡Bien hecho! Has creado un programa que muestra una carta de un pirata. A medida que avancemos en nuestra aventura, utilizaremos estas habilidades para explorar y descifrar los secretos de "La Isla del Tesoro". ¡Sigue adelante, intrépido aventurero!</p>
+<h3 id="una_tarea_para_experimentados_grumetes">Una Tarea para Experimentados Grumetes<a class="headerlink" href="#una_tarea_para_experimentados_grumetes" title="Permanent link">#</a></h3>
+<p>¿Te consideras ya un <em>lobo de mar</em>? Proponemos la siguiente tarea: crear una variable <code>arbol</code> en la que podamos guardar el nombre del árbol (roble, haya, pino, ...) y reescribir la carta del <em>Capitán Flint</em> en la que el tesoro esté bajo diferentes árboles. Una pista, es fácil si usas f-string.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="appit-03-el-mapa-del-tesoro.html" class="btn btn-neutral float-right" title="El Mapa del Tesoro">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="appit-01-el-viaje-comienza.html" class="btn btn-neutral" title="El Viaje Comienza"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p><b>Aventuras de Programación en Python en la Isla del Tesoro</b> <br>Copyright &#169; 2024 <a href="https://github.com/imarranz">Ibon Martínez-Arranz</a><br></p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/imarranz/aventuras-programacion-python-isla-del-tesoro/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="appit-01-el-viaje-comienza.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="appit-03-el-mapa-del-tesoro.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
