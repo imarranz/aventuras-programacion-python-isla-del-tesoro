@@ -169,35 +169,41 @@ else:
 <p>Estamos en un momento crucial de nuestra aventura, frente al barco pirata del temido Capitán Flint. Para hacer esta experiencia aún más emocionante, crearemos un juego de elección de caminos que refleje la toma de decisiones que se encuentran en la narrativa de "La Isla del Tesoro". A través de estructuras de control condicionales, permitiremos que el jugador decida el curso de la acción.</p>
 <h4 id="diseno_del_juego_y_las_decisiones">Diseño del Juego y las Decisiones<a class="headerlink" href="#diseno_del_juego_y_las_decisiones" title="Permanent link">#</a></h4>
 <p>En nuestro juego, el jugador tendrá que decidir si abordar o no el barco pirata. Si decide abordar, se encontrará con más opciones y desafíos. Si decide no abordar, la historia seguirá un camino diferente. Vamos a diseñar las opciones:</p>
-<ol>
+<ul>
 <li>
 <p><strong>Decisión 1: ¿Abordar el Barco Pirata?</strong></p>
-</li>
+<ul>
 <li>
 <p>Opción 1: Abordar el barco pirata.</p>
 </li>
 <li>
 <p>Opción 2: No abordar y explorar más la isla.</p>
 </li>
+</ul>
+</li>
 <li>
 <p><strong>Decisión 2 (si se decide abordar): ¿Entrar en la Bodega o en la Cubierta?</strong></p>
-</li>
+<ul>
 <li>
 <p>Opción 1: Entrar en la bodega.</p>
 </li>
 <li>
 <p>Opción 2: Ir a la cubierta.</p>
 </li>
+</ul>
+</li>
 <li>
 <p><strong>Decisión 3 (si se decide entrar en la Bodega): ¿Buscar Tesoros o Escapar?</strong></p>
-</li>
+<ul>
 <li>
 <p>Opción 1: Buscar tesoros en la bodega.</p>
 </li>
 <li>
 <p>Opción 2: Intentar escapar del barco.</p>
 </li>
-</ol>
+</ul>
+</li>
+</ul>
 <h4 id="desarrollo_del_programa_en_python">Desarrollo del Programa en Python<a class="headerlink" href="#desarrollo_del_programa_en_python" title="Permanent link">#</a></h4>
 <p>Ahora, creemos el programa en Python que simulará este juego de elección de caminos. Utilizaremos estructuras condicionales para guiar al jugador a través de las opciones y mostrar resultados basados en esas decisiones. Aquí está el código:</p>
 <pre><code class="language-python">print(&quot;Bienvenido a la Aventura Pirata&quot;)
