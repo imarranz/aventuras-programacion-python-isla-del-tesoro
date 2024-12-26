@@ -1,0 +1,11 @@
+
+/* Include Google Fonts */
+/* https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+h1, h2, h3 {
+    font-family: 'Pirata One'; /*'Fjalla One';*/
+    color: #0094C6;
+}
+
+
